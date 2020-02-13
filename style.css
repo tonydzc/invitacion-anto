@@ -1,6 +1,4 @@
 body{
-    width: 800px;
-    width: 800px;
     margin: 0 auto;
 }
 .carta {
@@ -9,14 +7,19 @@ body{
 .carta:hover {
   background: url("images/carta-abierta.png") no-repeat;
 }
-.card-wrapper{
+.carta-wrapper{
+  position: relative;
+  height: 400px;
+}
+.carta-wrapper-open{
   position: relative;
   height: 600px;
 }
-.card-wrapper img{
+#carta-div img{
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
 }
+

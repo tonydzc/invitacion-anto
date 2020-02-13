@@ -3,22 +3,17 @@ var cartaAbierta = false;
 $(document.getElementById("carta")).click(function(){
     
     var carta = document.getElementById("carta");
-
+    var cartadiv = $("#carta-div");
     if(cartaAbierta){
         carta.setAttribute("src","images/carta-cerrada.png");
+        cartadiv.removeClass("carta-wrapper-open");
+        cartadiv.addClass("carta-wrapper");
         cartaAbierta=false;
     }else{
         carta.setAttribute("src","images/carta-abierta.png");
+        cartadiv.removeClass("carta-wrapper");
+        cartadiv.addClass("carta-wrapper-open");
         cartaAbierta=true;
     }
     
-});
-
-
-/* IDEA FOR ICON FROM HERE -> http://dribbble.com/shots/1003867-Dribbble-Invitation?list=popular&offset=2 */
-
-/* Trigger Animation */
-$('a').on('click', function() {
-    $('.container').addClass('is-active');
-    $(this).remove();
 });
