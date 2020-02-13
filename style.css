@@ -1,13 +1,22 @@
 body{
     width: 800px;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    width: 800px;
+    margin: 0 auto;
 }
 .carta {
     background: url("images/carta-cerrada.png") no-repeat;
 }
-
 .carta:hover {
   background: url("images/carta-abierta.png") no-repeat;
+}
+.card-wrapper{
+  position: relative;
+  height: 600px;
+}
+.card-wrapper img{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
