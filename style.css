@@ -10,6 +10,53 @@ body{
   height: 400px;
 }
 
+.carta-wrapper #carta{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  animation-name: angry-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+
+@keyframes angry-animation {
+  0%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40%{
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  50%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  60%{
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  80%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100%{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
 .carta-wrapper-open #carta{
   position: absolute;
   left: 0;
