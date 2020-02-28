@@ -76,9 +76,9 @@ body{
 }
 
 #invitacion{
-  width: 400px;
+  width: 100%;
   position: absolute;
-  top: 30%;
+  top: 31%;
   margin: 0 auto;
   animation-name: mostrar-invitacion;
   animation-duration: 2s;
@@ -88,10 +88,10 @@ body{
 
 @keyframes mostrar-invitacion {
   0%   {width: 260px; opacity: 50%;}
-  25%  {width: 260px; }
-  50%  {width: 300px; opacity: 75%;}
-  75%  {width: 350px; }
-  100% {width: 400px; }
+  25%  {width: 290px; }
+  50%  {width: 320px; opacity: 75%;}
+  75%  {width: 340px; }
+  100% {width: 100%; }
 }
 
 
