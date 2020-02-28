@@ -1,20 +1,25 @@
 body{
     margin: 0 auto;
 }
-.carta {
-    background: url("images/carta-cerrada.png") no-repeat;
-}
-.carta:hover {
-  background: url("images/carta-abierta.png") no-repeat;
-}
 .carta-wrapper{
   position: relative;
   height: 400px;
 }
 .carta-wrapper-open{
   position: relative;
-  height: 600px;
+  height: 400px;
 }
+
+.carta-wrapper-open #carta{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
 #carta-div img{
   position: absolute;
   left: 0;
@@ -22,4 +27,24 @@ body{
   bottom: 0;
   margin: 0 auto;
 }
+
+#invitacion{
+  width: 400px;
+  position: absolute;
+  top: 30%;
+  margin: 0 auto;
+  animation-name: mostrar-invitacion;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes mostrar-invitacion {
+  0%   {width: 260px; opacity: 50%;}
+  25%  {width: 260px; }
+  50%  {width: 300px; opacity: 75%;}
+  75%  {width: 350px; }
+  100% {width: 400px; }
+}
+
 
