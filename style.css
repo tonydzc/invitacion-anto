@@ -76,7 +76,7 @@ body{
 }
 
 #invitacion{
-  width: 100%;
+  width: 350px;
   position: absolute;
   top: 31%;
   margin: 0 auto;
@@ -91,7 +91,7 @@ body{
   25%  {width: 290px; }
   50%  {width: 320px; opacity: 75%;}
   75%  {width: 340px; }
-  100% {width: 100%; }
+  100% {width: 350px; }
 }
 
 
