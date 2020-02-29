@@ -150,9 +150,9 @@ body{
 }
 
 .open {
-  border-right: 150px solid transparent;
+  border-right: 152px solid transparent;
   border-top: 75px solid #d6d6d6;
-  border-left: 150px solid transparent;  
+  border-left: 152px solid transparent;  
   position: absolute;
   z-index: 9999;
   left: 0;
