@@ -221,10 +221,6 @@ a {
   padding: 8px 15px;
 }
 
-a:active,
-a:hover {
-   box-shadow: 0 1px 0 #2a2c2b;
-}
 
 /* TRIGGER ANIMATIONS */
 .is-active .open {
@@ -243,6 +239,17 @@ a:hover {
   animation-fill-mode: forwards;
   animation-delay: 2s; /* W3C and Opera */ 
 }
+
+.is-active .mapa{
+  animation: mapaShow 2.5 ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  opacity: 0;
+}
+
 
 /* ANIMATIONS */
 @keyframes foldUp {  
@@ -286,5 +293,13 @@ to {
       width: 335px;
       z-index: 9999;
       left: 35px;
+  }  
+}
+
+@keyframes mapaShow{
+  from {  
+    opacity: 0;
+  } to {
+    opacity: 2;
   }  
 }
