@@ -247,7 +247,6 @@ a {
   position: absolute;
   bottom: 0px;
   right: 0;
-  opacity: 0;
 }
 
 
@@ -296,10 +295,3 @@ to {
   }  
 }
 
-@keyframes mapaShow{
-  from {  
-    opacity: 0;
-  } to {
-    opacity: 2;
-  }  
-}

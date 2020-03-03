@@ -1,7 +1,7 @@
 var cartaAbierta = false;
 var carta = document.getElementById("carta");
 var cartadiv = $("#carta-div");
-var mapa = $("#mapa")
+
 $(document.getElementById("carta")).click(function(){
     
     if(cartaAbierta){
