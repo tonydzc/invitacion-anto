@@ -2,12 +2,14 @@ html{
   height: 100%;
 }
 body{
-  height: 100%;
+    height: 100%;
     margin: 0 auto;
     background-image: url("images/img5.gif");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 .carta-wrapper{
   position: relative;
@@ -297,5 +299,12 @@ to {
       left: 35px;
       box-shadow: 5px 5px 5px #a6a6a6;
   }  
+}
+
+
+@media only screen and (min-width: 1200px)  {
+  body{
+    background-size: inherit;
+  }
 }
 
